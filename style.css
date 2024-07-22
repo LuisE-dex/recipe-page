@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --White: hsla(0, 17%, 86%, 0.938);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsla(330, 56%, 71%, 0.849);
+}
+body{
+    background-color: var(--Rose50);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 375px;
+    background-color: var(--White);
+    margin: 50px auto;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+
+/*---------header--------*/
+header{
+    margin-bottom: 30px;
+}
+.image{
+    height: 170px;
+    width: 375px;
+    background-image: url(image-omelette.jpeg);
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+header h1{
+    color: var(--Stone900);
+    margin: 30px 0 20px 30px;
+    font-family: "Young Serif", serif;
+    line-height: 35px;
+    font-weight: 400;
+}
+header p{
+    color: var(--Stone600);
+    margin: 0 30px 0 30px;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+/*------preparationTime------*/
+.time{
+    height: 175px;
+    width: 345px;
+    background-color: var(--Rose50);
+    margin: 0 auto;
+    border-radius: 12px;
+    padding-top: 20px;   
+    margin-bottom: 45px;
+}
+.time h1{
+    font-family: "Outfit", sans-serif;
+    color: var(--Rose800);
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0 0 15px 30px;
+}
+.time ul{
+    margin-left: 50px;
+    font-family: "Outfit", sans-serif;
+    line-height: 28px;
+    font-weight: 400;
+}
+.time b{
+    color: var(--Stone900);
+}
+.time li{
+    padding-left: 15px;
+}
+.time li::marker{
+    color: var(--Rose800);
+}
+
+
+/*-------restOfPage-------*/
+.rest h1{
+    font-family: "Young Serif", serif;
+    font-weight: 600;
+    color: var(--Brown800);
+    margin: 0 0 20px 30px;
+}
+.rest ul{
+    font-family: "Outfit", sans-serif;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--Stone600);
+    margin: 0 30px 20px 40px;
+}
+.rest li{
+    padding-left: 15px;
+}
+.rest li::marker{
+    color: var(--Brown800);
+}
+.rest ol{
+    font-family: "Outfit", sans-serif;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--Stone600);
+    margin: 0 30px 0 40px;
+}
+.rest ol li{
+    margin-bottom: 15px;
+    padding-left: 25px;
+    margin-left: 20px;
+}
+
+.rest p{
+    color: var(--Stone600);
+    text-align: left;
+    font-family: "Outfit", sans-serif;
+    margin: 0 25px 30px 30px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/*--------stats-------*/
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 60px;
+    font-family: "Outfit", sans-serif;
+    color: var(--Stone600);
+}
+hr{
+    width: 345px;
+    position: relative;
+    right: 45px;
+    margin: 15px 0 15px 0;
+    color: rgba(119, 113, 113, 0.151);
+}
+.line{
+    width: 345px;
+    position: relative;
+    left: 50% ;
+    transform: translateX(-50%);
+}
+.stats p{
+    position: relative;
+    top: 25px;
+    right: 30px;
+}
+.stats b{
+    color: var(--Brown800);
+    font-weight: 600;
+    margin-left: 200px;
+    display: flex;
+    position: relative;
+    bottom: 25px;
+    right: 15px;
+}
+
+
+/*---------MQ--------*/
+@media screen and (min-width: 700px) {
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: var(--Rose50);
+    }
+    .container{
+        width: 635px;
+        background-color: var(--White);
+        border-radius: 10px;
+        padding-bottom: 30px;
+    }
+    header{
+        padding-top: 20px;
+        margin-top: 5px;
+    }
+    .image{
+        width: 600px;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+    .time{
+        position: relative;
+        right: 100px;
+    }
+    hr{
+        width: 600px;
+    }
+    .line{
+        width: 600px;
+    }
+    .stats b{
+        margin-left: 350px;
+        display: flex;
+    }
+}
+
+/*----------footer----------*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 60px 0 40px 0;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+.attribution a { 
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: var(--Brown800); 
+    text-decoration: none;
+}
