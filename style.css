@@ -184,6 +184,7 @@ hr{
         background-color: var(--White);
         border-radius: 10px;
         padding-bottom: 30px;
+        margin-top: 50px;
     }
     header{
         padding-top: 20px;
